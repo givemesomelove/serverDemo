@@ -12,7 +12,7 @@ app.get('/api/hello', (req, res) => {
     })
 })
 
-app.listen(port, () => {
+app.listen(port, '0.0.0.0', () => {
     console.log(`Server running on port ${port}`)
     console.log(`api测试地址: http://localhost:${port}/api/hello`)
 })
